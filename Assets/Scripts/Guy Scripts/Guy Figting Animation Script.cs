@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class GuyFightingScript : MonoBehaviour
+public class GuyFightingAnimationScript : MonoBehaviour
 {
     private Animator animator;
     private int input = 0;
@@ -131,7 +131,6 @@ public class GuyFightingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log($"isStance: {isStance}, isLockedToEnemy: {isLockedToEnemy}, input: {input}");
         HandleInput();
         HandleAnimation();
     }

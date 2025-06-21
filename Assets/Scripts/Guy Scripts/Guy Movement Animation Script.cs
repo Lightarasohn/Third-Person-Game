@@ -66,10 +66,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 animator.SetBool("isSprinting", false);
 
                 // Düşmana dönük ol
-                GameObject fightingScriptObj = GetComponent<GuyFightingScript>()?.gameObject;
+                GameObject fightingScriptObj = GetComponent<GuyFightingAnimationScript>()?.gameObject;
                 if (fightingScriptObj != null)
                 {
-                    GuyFightingScript fightingScript = fightingScriptObj.GetComponent<GuyFightingScript>();
+                    GuyFightingAnimationScript fightingScript = fightingScriptObj.GetComponent<GuyFightingAnimationScript>();
                     if (fightingScript != null && fightingScript.lockedEnemy != null)
                     {
                         Vector3 dir = fightingScript.lockedEnemy.transform.position - transform.position;

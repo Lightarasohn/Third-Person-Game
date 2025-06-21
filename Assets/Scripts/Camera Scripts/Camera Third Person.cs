@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class CameraThirdPerson : MonoBehaviour
 {
     private GameObject player = null;
-    private GuyFightingScript guyFightingScript = null;
+    private GuyFightingAnimationScript guyFightingAnimationScript = null;
     private bool isLockedToEnemy = false;
     private GameObject lockedEnemy = null;
     private float yaw = 0f;
@@ -27,9 +27,7 @@ public class CameraThirdPerson : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        guyFightingScript = player.GetComponent<GuyFightingScript>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        guyFightingScript = player.GetComponent<GuyFightingScript>();
+        guyFightingAnimationScript = player.GetComponent<GuyFightingAnimationScript>();
         // Baþlangýç pozisyonlarýný ayarla
         currentCameraPosition = transform.position;
         currentLookAtPosition = player.transform.position + new Vector3(0, height, 0);
@@ -38,8 +36,8 @@ public class CameraThirdPerson : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isLockedToEnemy = guyFightingScript.isLockedToEnemy;
-        lockedEnemy = guyFightingScript.lockedEnemy;
+        isLockedToEnemy = guyFightingAnimationScript.isLockedToEnemy;
+        lockedEnemy = guyFightingAnimationScript.lockedEnemy;
 
         ReadMouseData();
         TurnCamera();
