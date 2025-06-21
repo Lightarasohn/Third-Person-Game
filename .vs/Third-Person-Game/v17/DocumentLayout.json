@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|c:\\users\\onurd\\desktop\\code\\unity-projects\\third-person-game\\assets\\scripts\\camera scripts\\camera third person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera scripts\\camera third person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\assets\\scripts\\guy scripts\\guy figting animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\guy scripts\\guy figting animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\assets\\scripts\\guy scripts\\guy movement animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\guy scripts\\guy movement animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|c:\\users\\onurd\\desktop\\code\\unity-projects\\third-person-game\\assets\\scripts\\camera scripts\\camera lock to enemy script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|c:\\users\\onurd\\desktop\\code\\unity-projects\\third-person-game\\assets\\scripts\\guy scripts\\guy figting animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\guy scripts\\guy figting animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\assets\\scripts\\camera scripts\\camera third person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera scripts\\camera third person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\assets\\scripts\\camera scripts\\camera lock to enemy script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera scripts\\camera lock to enemy script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -44,33 +44,32 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera Scripts\\Camera Lock To Enemy Script.cs",
               "ToolTip": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\Assets\\Scripts\\Camera Scripts\\Camera Lock To Enemy Script.cs",
               "RelativeToolTip": "Assets\\Scripts\\Camera Scripts\\Camera Lock To Enemy Script.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:37:03.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T10:37:03.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Camera Third Person.cs",
               "DocumentMoniker": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\Assets\\Scripts\\Camera Scripts\\Camera Third Person.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera Scripts\\Camera Third Person.cs",
               "ToolTip": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\Assets\\Scripts\\Camera Scripts\\Camera Third Person.cs",
               "RelativeToolTip": "Assets\\Scripts\\Camera Scripts\\Camera Third Person.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAnwFkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAACkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T10:36:32.304Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Guy Movement Animation Script.cs",
               "DocumentMoniker": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\Assets\\Scripts\\Guy Scripts\\Guy Movement Animation Script.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Guy Scripts\\Guy Movement Animation Script.cs",
               "ToolTip": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\Assets\\Scripts\\Guy Scripts\\Guy Movement Animation Script.cs",
               "RelativeToolTip": "Assets\\Scripts\\Guy Scripts\\Guy Movement Animation Script.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAzwCoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAlwEEAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T12:54:38.763Z",
               "EditorCaption": ""
@@ -83,7 +82,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Guy Scripts\\Guy Figting Animation Script.cs",
               "ToolTip": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\Assets\\Scripts\\Guy Scripts\\Guy Figting Animation Script.cs",
               "RelativeToolTip": "Assets\\Scripts\\Guy Scripts\\Guy Figting Animation Script.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAmwCYAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwHgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T12:26:23.876Z",
               "EditorCaption": ""

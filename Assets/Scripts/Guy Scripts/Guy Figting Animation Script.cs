@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class GuyFigtingScript : MonoBehaviour
+public class GuyFightingScript : MonoBehaviour
 {
     private Animator animator;
     private int input = 0;
@@ -76,7 +76,7 @@ public class GuyFigtingScript : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Q))
         {
             lockedEnemy = LockToEnemy();
-            if(lockedEnemy != null && isLockedToEnemy)
+            if (lockedEnemy != null && isLockedToEnemy)
                 animator.SetBool("isLockedToEnemy", false);
             else if (lockedEnemy != null && !isLockedToEnemy)
                 animator.SetBool("isLockedToEnemy", true);
@@ -93,50 +93,46 @@ public class GuyFigtingScript : MonoBehaviour
         if (Input.GetKey(KeyCode.D)) input = 4;
     }
 
-    private void HandleMovement()
+    private void HandleAnimation()
     {
-        if (input != 0 && isStance && isLockedToEnemy)
-        {
-            switch (input)
-            {
-                case 1:
-                    animator.SetBool("boxingForwardStep", true);
-                    break;
-                case 2:
-                    animator.SetBool("boxingBackwardStep", true);
-                    break;
-                case 3:
-                    animator.SetBool("boxingLeftStep", true);
-                    break;
-                case 4:
-                    animator.SetBool("boxingRightStep", true);
-                    break;
-                default:
-                    animator.SetBool("boxingForwardStep", false);
-                    animator.SetBool("boxingBackwardStep", false);
-                    animator.SetBool("boxingLeftStep", false);
-                    animator.SetBool("boxingRightStep", false);
-                    break;
-            }
-        }
+        // Tüm adým bool'larýný baþta false yap
+        animator.SetBool("boxingForwardStep", false);
+        animator.SetBool("boxingBackwardStep", false);
+        animator.SetBool("boxingLeftStep", false);
+        animator.SetBool("boxingRightStep", false);
 
-        if (input != 0 && isStance && !isLockedToEnemy)
+        if (input != 0 && isStance)
         {
-            animator.SetBool("boxingForwardStep", true);
-        }
-        else
-        {
-            animator.SetBool("boxingForwardStep", false);
-            animator.SetBool("boxingBackwardStep", false);
-            animator.SetBool("boxingLeftStep", false);
-            animator.SetBool("boxingRightStep", false);
+            if (isLockedToEnemy)
+            {
+                switch (input)
+                {
+                    case 1:
+                        animator.SetBool("boxingForwardStep", true);
+                        break;
+                    case 2:
+                        animator.SetBool("boxingBackwardStep", true);
+                        break;
+                    case 3:
+                        animator.SetBool("boxingLeftStep", true);
+                        break;
+                    case 4:
+                        animator.SetBool("boxingRightStep", true);
+                        break;
+                }
+            }
+            else
+            {
+                animator.SetBool("boxingForwardStep", true);
+            }
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log($"isStance: {isStance}, isLockedToEnemy: {isLockedToEnemy}, input: {input}");
         HandleInput();
-        HandleMovement();
+        HandleAnimation();
     }
 }

@@ -13,7 +13,7 @@ public class CameraLockToEnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isLockedToEnemy = player.GetComponent<GuyFigtingScript>().isLockedToEnemy;
+        isLockedToEnemy = player.GetComponent<GuyFightingScript>().isLockedToEnemy;
         if (isLockedToEnemy)
         {
             GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");

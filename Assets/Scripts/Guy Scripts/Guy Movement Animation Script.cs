@@ -7,6 +7,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private Animator animator;
     private int isWalkingHash;
     public bool isStance;
+    private bool isLockedToEnemy = false;
     private Rigidbody rb;
 
     private Transform cameraTransform;
@@ -33,13 +34,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
      void Update()
      {
         isStance = animator.GetBool("isStance");
-     }
+        isLockedToEnemy = animator.GetBool("isLockedToEnemy");
+    }
 
     private void FixedUpdate()
     {
+        HandleInput();
 
-            HandleInput();
-            ApplyGravityIfNeeded();
+        ApplyGravityIfNeeded();
         
     }
 
@@ -54,19 +56,45 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         bool sprint = Input.GetKey(KeyCode.LeftShift);
 
+        // isLockedToEnemy ve isStance modundayken boxing stepler ile hareket
         if (input != Vector2.zero)
         {
-            if(sprint)
-                animator.SetBool("isSprinting", true);
+            if (isLockedToEnemy && isStance)
+            {
+                // Normal yürüme/koşma animasyonlarını kapat
+                animator.SetBool(isWalkingHash, false);
+                animator.SetBool("isSprinting", false);
+
+                // Düşmana dönük ol
+                GameObject fightingScriptObj = GetComponent<GuyFightingScript>()?.gameObject;
+                if (fightingScriptObj != null)
+                {
+                    GuyFightingScript fightingScript = fightingScriptObj.GetComponent<GuyFightingScript>();
+                    if (fightingScript != null && fightingScript.lockedEnemy != null)
+                    {
+                        Vector3 dir = fightingScript.lockedEnemy.transform.position - transform.position;
+                        dir.y = 0;
+                        if (dir.sqrMagnitude > 0.01f)
+                        {
+                            targetRotation = Quaternion.LookRotation(dir).eulerAngles.y;
+                        }
+                    }
+                }
+            }
             else
             {
-                animator.SetBool(isWalkingHash, true);
-                animator.SetBool("isSprinting", false);
-            }
+                if (sprint)
+                    animator.SetBool("isSprinting", true);
+                else
+                {
+                    animator.SetBool(isWalkingHash, true);
+                    animator.SetBool("isSprinting", false);
+                }
 
-            float inputAngle = Mathf.Atan2(input.x, input.y) * Mathf.Rad2Deg;
-            float cameraY = cameraTransform?.eulerAngles.y ?? 0f;
-            targetRotation = cameraY + inputAngle;
+                float inputAngle = Mathf.Atan2(input.x, input.y) * Mathf.Rad2Deg;
+                float cameraY = cameraTransform?.eulerAngles.y ?? 0f;
+                targetRotation = cameraY + inputAngle;
+            }
         }
         else
         {
@@ -78,11 +106,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if (animator && animator.applyRootMotion)
         {
-            // H�z� Rigidbody�ye uygula
+            // Boxing modunda da root motion uygula
             Vector3 velocity = animator.deltaPosition / Time.fixedDeltaTime;
             rb.linearVelocity = new Vector3(velocity.x, rb.linearVelocity.y, velocity.z);
 
-            // D�n��� yumu�ak �ekilde uygula
+            // Dönüşü yumuşak şekilde uygula
             currentRotation = Mathf.LerpAngle(currentRotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
             rb.MoveRotation(Quaternion.Euler(0f, currentRotation, 0f));
         }
@@ -92,7 +120,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if (!IsGrounded())
         {
-            rb.AddForce(Physics.gravity, ForceMode.Acceleration); // Elle yer�ekimi uygula
+            rb.AddForce(Physics.gravity, ForceMode.Acceleration); // Elle yerçekimi uygula
         }
     }
 
