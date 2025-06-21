@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\assets\\scripts\\guy scripts\\guy fighting script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|c:\\users\\onurd\\desktop\\code\\unity-projects\\third-person-game\\assets\\scripts\\guy scripts\\guy fighting script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\guy scripts\\guy fighting script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|c:\\users\\onurd\\desktop\\code\\unity-projects\\third-person-game\\assets\\scripts\\guy scripts\\guy figting animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\assets\\scripts\\guy scripts\\guy figting animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9506D92-2104-FBC1-7A5B-C3F323D9485E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\guy scripts\\guy figting animation script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Guy Scripts\\Guy Fighting Script.cs",
               "ToolTip": "C:\\Users\\onurd\\Desktop\\Code\\Unity-Projects\\Third-Person-Game\\Assets\\Scripts\\Guy Scripts\\Guy Fighting Script.cs",
               "RelativeToolTip": "Assets\\Scripts\\Guy Scripts\\Guy Fighting Script.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAEwDEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T13:49:10.842Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Camera Scripts\\Camera Third Person.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAQwB0AAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T10:36:32.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T10:36:32.304Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Guy Scripts\\Guy Movement Animation Script.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAAwEYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:54:38.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T12:54:38.763Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Guy Scripts\\Guy Figting Animation Script.cs",
               "ViewState": "AgIAAHkAAAAAAAAAAAArwIUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:26:23.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T12:26:23.876Z"
             },
             {
               "$type": "Document",
