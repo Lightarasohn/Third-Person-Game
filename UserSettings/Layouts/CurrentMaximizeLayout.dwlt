@@ -247,7 +247,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b6a60000
+      m_SelectedIDs: 8ea60000
       m_LastClickedID: 0
       m_ExpandedIDs: 1cfbffff
       m_RenameOverlay:
@@ -340,14 +340,14 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 2388459959513985960, guid: f5210d7f226998c4faf3d3fbfc057cff, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.74871224
+    - e00: 0.90985996
       e01: 0
       e02: 0
-      e03: 393.74918
+      e03: 1035.6306
       e10: 0
-      e11: 0.74871224
+      e11: 0.90985996
       e12: 0
-      e13: 75.79639
+      e13: 174.65858
       e20: 0
       e21: 0
       e22: 1
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.025451431, y: -0.9699287, z: 0.11577273, w: -0.21284261}
     speed: 2
-    m_Value: {x: -0.025449973, y: -0.9698731, z: 0.11576609, w: -0.21283041}
+    m_Value: {x: 0.025451431, y: 0.96992874, z: -0.11577273, w: 0.21284261}
   m_Size:
     m_Target: 24.402828
     speed: 2
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -903,14 +903,14 @@ MonoBehaviour:
     y: 547
     width: 1546
     height: 386
-  m_MinSize: {x: 231, y: 276}
-  m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 101, y: 126}
+  m_MaxSize: {x: 4001, y: 4026}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -977,7 +977,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c6b40000
     m_LastClickedID: 46278
-    m_ExpandedIDs: 00000000f2a60000f4a60000f6a60000f8a60000faa60000fca60000e8a80000faa8000000ca9a3b
+    m_ExpandedIDs: 00000000f2a60000f4a60000f6a60000f8a60000faa60000fca6000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1032,8 +1032,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b6a60000
-    m_LastClickedInstanceID: 42678
+    m_SelectedInstanceIDs: 8ea60000
+    m_LastClickedInstanceID: 42638
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000c0b50000
     m_RenameOverlay:
